@@ -1,0 +1,5 @@
+/* index.css básico para evitar erro de import */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}

@@ -1,7 +1,7 @@
+import { Text } from '../../ui/components/Text'
 import React from 'react'
 import * as styles from './styles'
 import Stack from '@mui/material/Stack'
-import { Text } from '@ui'
 
 const HomePage: React.FC = () => {
   return (
