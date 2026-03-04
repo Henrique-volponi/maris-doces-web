@@ -1,18 +1,27 @@
-import { Text } from '../../ui/components/Text'
-import React from 'react'
-import * as styles from './styles'
-import Stack from '@mui/material/Stack'
+import React, { useCallback } from 'react'
+import { Hero } from './components/Hero'
+import { Products } from './components/Products'
+import { Contact } from './components/Contact'
+import { Footer } from './components/Footer'
 
 const HomePage: React.FC = () => {
+  const scrollTo = useCallback((id: string) => {
+    const el = document.getElementById(id)
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth', block: 'start' })
+    }
+  }, [])
+
   return (
-    <Stack sx={styles.container}>
-      <Text sx={styles.title} variant="h1">
-        Bem-vindo à Maris Doces!
-      </Text>
-      <Text sx={styles.description} variant="body1">
-        Confeitaria artesanal com amor e sabor.
-      </Text>
-    </Stack>
+    <>
+      <Hero
+        onViewProducts={() => scrollTo('products')}
+        onContact={() => scrollTo('contact')}
+      />
+      <Products />
+      <Contact />
+      <Footer />
+    </>
   )
 }
 
