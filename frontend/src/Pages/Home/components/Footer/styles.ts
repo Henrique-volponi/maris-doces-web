@@ -1,5 +1,6 @@
 import { SxProps } from '@mui/material'
 import { colors } from '../../../../ui/theme/colors'
+import { fontFamily } from '../../../../ui/theme/font-family'
 
 export const footer: SxProps = {
   width: '100%',
@@ -23,14 +24,14 @@ export const brand: SxProps = {
   display: 'flex',
   alignItems: 'center',
   gap: '8px',
-  fontFamily: 'Montserrat, sans-serif',
+  fontFamily: fontFamily.title,
   fontWeight: 700,
   fontSize: '18px',
   color: colors.light.primaryForeground,
 }
 
 export const text: SxProps = {
-  fontFamily: 'Montserrat, sans-serif',
+  fontFamily: fontFamily.title,
   fontWeight: 500,
   fontSize: '14px',
   lineHeight: 1.4,
