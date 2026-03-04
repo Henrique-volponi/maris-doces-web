@@ -1,5 +1,6 @@
 import { SxProps } from '@mui/material'
 import { colors } from '../../../../ui/theme/colors'
+import { fontFamily } from '../../../../ui/theme/font-family'
 
 export const section: SxProps = {
   width: '100%',
@@ -14,7 +15,7 @@ export const section: SxProps = {
 }
 
 export const heading: SxProps = {
-  fontFamily: 'Montserrat, sans-serif',
+  fontFamily: fontFamily.title,
   fontWeight: 700,
   fontSize: '48px',
   lineHeight: 1.1,
@@ -23,7 +24,7 @@ export const heading: SxProps = {
 }
 
 export const subheading: SxProps = {
-  fontFamily: 'Montserrat, sans-serif',
+  fontFamily: fontFamily.title,
   fontWeight: 500,
   fontSize: '22px',
   lineHeight: 1.35,
@@ -63,7 +64,7 @@ export const cardBody: SxProps = {
 }
 
 export const cardTitle: SxProps = {
-  fontFamily: 'Montserrat, sans-serif',
+  fontFamily: fontFamily.title,
   fontWeight: 700,
   fontSize: '22px',
   lineHeight: 1.2,
@@ -71,7 +72,7 @@ export const cardTitle: SxProps = {
 }
 
 export const cardDescription: SxProps = {
-  fontFamily: 'Montserrat, sans-serif',
+  fontFamily: fontFamily.title,
   fontWeight: 500,
   fontSize: '16px',
   lineHeight: 1.45,
