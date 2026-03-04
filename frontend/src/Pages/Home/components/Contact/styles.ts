@@ -1,5 +1,6 @@
 import { SxProps } from '@mui/material'
 import { colors } from '../../../../ui/theme/colors'
+import { fontFamily } from '../../../../ui/theme/font-family'
 
 export const section: SxProps = {
   width: '100%',
@@ -14,7 +15,7 @@ export const section: SxProps = {
 }
 
 export const heading: SxProps = {
-  fontFamily: 'Montserrat, sans-serif',
+  fontFamily: fontFamily.title,
   fontWeight: 700,
   fontSize: '42px',
   lineHeight: 1.1,
@@ -23,7 +24,7 @@ export const heading: SxProps = {
 }
 
 export const subheading: SxProps = {
-  fontFamily: 'Montserrat, sans-serif',
+  fontFamily: fontFamily.title,
   fontWeight: 500,
   fontSize: '20px',
   lineHeight: 1.4,
@@ -64,7 +65,7 @@ export const iconBadge: SxProps = {
 }
 
 export const cardTitle: SxProps = {
-  fontFamily: 'Montserrat, sans-serif',
+  fontFamily: fontFamily.title,
   fontWeight: 700,
   fontSize: '18px',
   lineHeight: 1.2,
@@ -72,7 +73,7 @@ export const cardTitle: SxProps = {
 }
 
 export const cardText: SxProps = {
-  fontFamily: 'Montserrat, sans-serif',
+  fontFamily: fontFamily.title,
   fontWeight: 500,
   fontSize: '16px',
   lineHeight: 1.35,
@@ -96,14 +97,14 @@ export const scheduleHeader: SxProps = {
   display: 'flex',
   alignItems: 'center',
   gap: '10px',
-  fontFamily: 'Montserrat, sans-serif',
+  fontFamily: fontFamily.title,
   fontWeight: 700,
   fontSize: '20px',
   color: colors.light.primary,
 }
 
 export const scheduleText: SxProps = {
-  fontFamily: 'Montserrat, sans-serif',
+  fontFamily: fontFamily.title,
   fontWeight: 500,
   fontSize: '16px',
   lineHeight: 1.45,
@@ -118,14 +119,14 @@ export const scheduleList: SxProps = {
 }
 
 export const note: SxProps = {
-  fontFamily: 'Montserrat, sans-serif',
+  fontFamily: fontFamily.title,
   fontWeight: 600,
   fontSize: '14px',
   color: colors.light.secondary,
 }
 
 export const noteText: SxProps = {
-  fontFamily: 'Montserrat, sans-serif',
+  fontFamily: fontFamily.title,
   fontWeight: 500,
   fontSize: '14px',
   color: colors.light.mutedForeground,
