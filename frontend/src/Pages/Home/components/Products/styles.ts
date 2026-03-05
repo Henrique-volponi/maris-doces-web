@@ -17,7 +17,7 @@ export const section: SxProps = {
 export const heading: SxProps = {
   fontFamily: fontFamily.title,
   fontWeight: 700,
-  fontSize: { xs: '34px', sm: '42px', md: '48px' },
+  fontSize: 'clamp(34px, 3.5vw + 10px, 60px)',
   lineHeight: 1.1,
   color: colors.light.primary,
   textAlign: 'center',
@@ -26,8 +26,8 @@ export const heading: SxProps = {
 export const subheading: SxProps = {
   fontFamily: fontFamily.title,
   fontWeight: 500,
-  fontSize: { xs: '18px', sm: '20px', md: '22px' },
-  lineHeight: 1.35,
+  fontSize: 'clamp(17px, 1.8vw + 8px, 22px)',
+  lineHeight: 1.32,
   color: colors.light.mutedForeground,
   textAlign: 'center',
 }
