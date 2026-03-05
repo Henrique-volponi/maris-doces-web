@@ -43,10 +43,10 @@ const ScheduleIcon: React.FC<IconProps> = (props) => (
 )
 
 const contacts: ContactInfo[] = [
-  { title: 'Telefone', text: '(11) 98765-4321', Icon: PhoneIcon },
-  { title: 'Email', text: 'contato@marisdoces.com.br', Icon: EmailIcon },
-  { title: 'Instagram', text: '@marisdoces', Icon: InstagramIcon },
-  { title: 'Localização', text: 'São Paulo, SP', Icon: LocationIcon },
+  { title: 'Telefone', text: '(31) 98611-9852', Icon: PhoneIcon },
+  { title: 'Email', text: 'Mari.gilmacedo@gmail.com', Icon: EmailIcon },
+  { title: 'Instagram', text: '@bymaris.doces', Icon: InstagramIcon },
+  { title: 'Localização', text: 'Lagoa Santa, MG', Icon: LocationIcon },
 ]
 
 const schedule = {
