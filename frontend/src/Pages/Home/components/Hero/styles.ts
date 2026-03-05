@@ -45,7 +45,7 @@ export const icon: SxProps = {
 
 export const title: SxProps = {
   fontFamily: fontFamily.title,
-  fontSize: { xs: '36px', sm: '48px', md: '64px' },
+  fontSize: 'clamp(38px, 4.2vw + 12px, 76px)',
   lineHeight: 1.05,
   color: colors.light.secondary,
 }
@@ -53,8 +53,8 @@ export const title: SxProps = {
 export const description: SxProps = {
   fontFamily: fontFamily.title,
   fontWeight: 500,
-  fontSize: { xs: '18px', sm: '22px', md: '28px' },
-  lineHeight: 1.35,
+  fontSize: 'clamp(16px, 1.4vw + 9px, 22px)',
+  lineHeight: 1.32,
   color: colors.light.mutedForeground,
   maxWidth: 940,
 }
