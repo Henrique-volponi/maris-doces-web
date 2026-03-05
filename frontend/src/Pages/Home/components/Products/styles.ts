@@ -5,7 +5,7 @@ import { fontFamily } from '../../../../ui/theme/font-family'
 export const section: SxProps = {
   width: '100%',
   background: `linear-gradient(180deg, ${colors.light.background} 0%, ${colors.light.muted} 100%)`,
-  padding: '56px 24px 72px',
+  padding: 'clamp(40px, 6vw, 72px) 24px clamp(56px, 6vw, 88px)',
   scrollMarginTop: '96px',
   boxSizing: 'border-box',
   display: 'flex',
@@ -17,7 +17,7 @@ export const section: SxProps = {
 export const heading: SxProps = {
   fontFamily: fontFamily.title,
   fontWeight: 700,
-  fontSize: '48px',
+  fontSize: { xs: '34px', sm: '42px', md: '48px' },
   lineHeight: 1.1,
   color: colors.light.primary,
   textAlign: 'center',
@@ -26,7 +26,7 @@ export const heading: SxProps = {
 export const subheading: SxProps = {
   fontFamily: fontFamily.title,
   fontWeight: 500,
-  fontSize: '22px',
+  fontSize: { xs: '18px', sm: '20px', md: '22px' },
   lineHeight: 1.35,
   color: colors.light.mutedForeground,
   textAlign: 'center',

@@ -8,7 +8,7 @@ const buttonBase: SxProps = {
   fontSize: '18px',
   fontWeight: 600,
   cursor: 'pointer',
-  minWidth: 170,
+  minWidth: { xs: 140, sm: 170 },
   transition: 'all 0.2s ease',
 }
 
@@ -20,9 +20,9 @@ export const container: SxProps = {
   flexDirection: 'column',
   alignItems: 'center',
   justifyContent: 'center',
-  gap: '32px',
+  gap: { xs: '24px', sm: '32px' },
   textAlign: 'center',
-  padding: '48px 48px',
+  padding: 'clamp(24px, 6vw, 64px)',
   background: `linear-gradient(180deg, ${colors.light.background} 0%, ${colors.light.muted} 100%)`,
 }
 
@@ -45,15 +45,16 @@ export const icon: SxProps = {
 
 export const title: SxProps = {
   fontFamily: fontFamily.title,
-  fontSize: '64px',
+  fontSize: { xs: '36px', sm: '48px', md: '64px' },
+  lineHeight: 1.05,
   color: colors.light.secondary,
 }
 
 export const description: SxProps = {
   fontFamily: fontFamily.title,
   fontWeight: 500,
-  fontSize: '28px',
-  lineHeight: 1.4,
+  fontSize: { xs: '18px', sm: '22px', md: '28px' },
+  lineHeight: 1.35,
   color: colors.light.mutedForeground,
   maxWidth: 940,
 }
@@ -63,8 +64,8 @@ export const ctaRow: SxProps = {
   flexDirection: 'row',
   alignItems: 'center',
   justifyContent: 'center',
-  gap: '16px',
-  flexWrap: 'nowrap',
+  gap: { xs: '12px', sm: '16px' },
+  flexWrap: 'wrap',
 }
 
 export const primaryButton: SxProps = {
