@@ -53,7 +53,7 @@ const schedule = {
   title: 'Horário de Atendimento',
   Icon: ScheduleIcon,
   hours: ['Segunda a Sexta: 9h às 18h', 'Sábado: 9h às 13h', 'Domingo: Fechado'],
-  noteLabel: 'Encomendas:',
+  noteLabel: 'Encomendas: ',
   noteText:
     'Faça seu pedido com antecedência mínima de 48 horas. Para ovos de Páscoa e bolos personalizados, recomendamos encomendar com pelo menos 1 semana de antecedência.',
 }
